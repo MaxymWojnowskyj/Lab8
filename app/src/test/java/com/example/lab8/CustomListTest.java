@@ -78,10 +78,10 @@ public class CustomListTest {
         City cCity = new City("Charlottetown", "Prince Edward Island");
         cityList.addCity(cCity);
         // we added cCity to the cityList so the cityList should contain it
-        // check if citylist first has cCity then check if the length of the arraylist is 2
+        // check if citylist first has cCity then check if the length of the arraylist is 1
         assertTrue(cityList.hasCity(cCity));
-        assertEquals(2, cityList.getCount());
+        assertEquals(1, cityList.getCount());
     }
-     
+
 
 }
