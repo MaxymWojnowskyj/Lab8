@@ -45,7 +45,7 @@ public class CustomListTest {
     void testHasCity() {
         CustomList cityList = mockCityList();
         City cCity = new City("Charlottetown", "Prince Edward Island");
-        cityList.add(cCity);
+        cityList.addCity(cCity);
         // we added cCity to the cityList so the cityList should contain it and hasCity should return true
         assertTrue(cityList.hasCity(cCity));
         City ykCity = new City("Yellowknife", "Northwest Territories");
@@ -57,7 +57,7 @@ public class CustomListTest {
     void testDelete() {
         CustomList cityList = mockCityList();
         City cCity = new City("Charlottetown", "Prince Edward Island");
-        cityList.add(cCity);
+        cityList.addCity(cCity);
         // we added cCity to the cityList so the cityList should contain it
 
         City ykCity = new City("Yellowknife", "Northwest Territories");
@@ -76,7 +76,7 @@ public class CustomListTest {
     void testCount() {
         CustomList cityList = mockCityList();
         City cCity = new City("Charlottetown", "Prince Edward Island");
-        cityList.add(cCity);
+        cityList.addCity(cCity);
         // we added cCity to the cityList so the cityList should contain it
         // check if citylist first has cCity then check if the length of the arraylist is 2
         assertTrue(cityList.hasCity(cCity));
