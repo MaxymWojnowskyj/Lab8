@@ -52,7 +52,7 @@ public class CustomListTest {
         // we did not add ykCity (Yellowknife) to the cityList so the cityList should not contain it and hasCity should return false
         assertFalse(cityList.hasCity(ykCity));
     }
-    /*
+
     @Test
     void testDelete() {
         CustomList cityList = mockCityList();
@@ -71,7 +71,7 @@ public class CustomListTest {
             cityList.delete(ykCity);
         });
     }
-
+    /*
     @Test
     void testCount() {
         CustomList cityList = mockCityList();
